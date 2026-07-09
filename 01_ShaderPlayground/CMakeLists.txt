@@ -14,7 +14,10 @@ find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glm REQUIRED)
 
-add_subdirectory(external)
+add_subdirectory(
+    ../external
+    ${CMAKE_BINARY_DIR}/external
+)
 
 add_executable(${CMAKE_PROJECT_NAME}
     src/main.cpp
@@ -30,7 +33,7 @@ add_executable(${CMAKE_PROJECT_NAME}
 target_include_directories(${CMAKE_PROJECT_NAME}
     PRIVATE
         ${CMAKE_SOURCE_DIR}/include
-        ${CMAKE_SOURCE_DIR}/external
+        ../external
 )
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
