@@ -15,6 +15,7 @@ Os projetos são independentes entre si e foram criados para permitir experiment
 ## Laboratórios
 
 - [x] [01 - Shader Playground](./01_ShaderPlayground/)
+- [x] [02 - Texture Laboratory](./02_TextureLaboratory/)
 
 ---
 
